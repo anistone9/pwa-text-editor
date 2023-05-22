@@ -1,4 +1,4 @@
-const { offlineFallback, warmStrategyCache } = require('workbox-recipes');
+const { warmStrategyCache } = require('workbox-recipes');
 const { CacheFirst } = require('workbox-strategies');
 const { registerRoute } = require('workbox-routing');
 const { CacheableResponsePlugin } = require('workbox-cacheable-response');
@@ -6,7 +6,7 @@ const { ExpirationPlugin } = require('workbox-expiration');
 const { precacheAndRoute } = require('workbox-precaching/precacheAndRoute');
 const { StaleWhileRevalidate } = require('workbox-strategies');
 
-// This method takes an array of URLs to precache. The self._WB_MANIFEST is an array that contains the list of URLs to precache.
+// This method takes an array of URLs to precache; the self._WB_MANIFEST is an array that contains the list of URLs to precache
 precacheAndRoute(self.__WB_MANIFEST);
 
 const pageCache = new CacheFirst({

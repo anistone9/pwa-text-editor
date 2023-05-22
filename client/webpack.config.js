@@ -10,7 +10,6 @@ module.exports = () => {
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js',
-      cards: './src/js/cards.js'
     },
     // Output for our bundles
     output: {
@@ -18,10 +17,10 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      // Webpack plugin that generates our html file and injects our bundles. 
+      // Webpack plugin that generates our html file and injects our bundles 
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Contact Cards'
+        title: 'J.A.T.E'
       }),
      
       // Injects our custom service worker
@@ -30,13 +29,13 @@ module.exports = () => {
         swDest: 'src-sw.js',
       }),
 
-      // Creates a manifest.json file.
+      // Creates a manifest.json file
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Contact Cards',
-        short_name: 'Contact',
-        description: 'Never forget your contacts!',
+        name: 'J.A.T.E',
+        short_name: 'Jate',
+        description: 'Browser text editor',
         background_color: '#225ca3',
         theme_color: '#225ca3',
         start_url: './',
@@ -61,7 +60,7 @@ module.exports = () => {
         {
           test: /\.m?js$/,
           exclude: /node_modules/,
-          // We use babel-loader in order to use ES6.
+          // Use babel-loader in order to use ES6
           use: {
             loader: 'babel-loader',
             options: {
