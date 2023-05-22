@@ -44,14 +44,16 @@ WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application    
 
 ## Description     
-Need to add    
+Text editor running in the browser, with the ability to run offline. This single-page application uses webpack, service workers, and IndexedDB, and incorporates Progressive Web Application (PWA) functionality.      
+Data is stored in an IndexedDB database, using the `idb` lightweight wrapper around the IndexedDB API.            
 
 ## Installation   
-Clone the repository in GitHub. 
-Need to add more                 
+Clone the repository in GitHub.   
+Run `npm install`, and `npm run start`.    
+Open `index.html` in the browser, and click `install`.                   
 
 # Usage    
-Need to add            
+This single-page application can be used to track notes and ideas while coding.               
 
 ## Demo   
 Need to add
