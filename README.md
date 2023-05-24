@@ -7,7 +7,6 @@ Text Editor Using PWA Criteria
 - [Description](#description)   
 - [Installation](#installation)
 - [Usage](#usage)
-- [Demo](#demo)
 - [Credits](#credits)  
 - [License](#license) 
 
@@ -48,15 +47,14 @@ Text editor running in the browser, with the ability to run offline. This single
 Data is stored in an IndexedDB database, using the `idb` lightweight wrapper around the IndexedDB API.            
 
 ## Installation   
-Clone the repository in GitHub.   
+Clone the repository in GitHub.  
+Open an integrated terminal.    
 Run `npm install`, and `npm run start`.    
-Open `index.html` in the browser, and click `install`.                   
+Navigate to the local host.   
+Click the 'Install' button to install the app on the local machine.                      
 
 # Usage    
-This single-page application can be used to track notes and ideas while coding.               
-
-## Demo   
-Need to add
+This single-page application can be used to track notes and ideas while coding, mark ideas down for later use.               
 
 ## Credits   
 University of Arizona Coding Bootcamp resources (class activities and examples).    
