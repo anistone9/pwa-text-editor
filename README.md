@@ -1,5 +1,8 @@
 # pwa-text-editor
-Text Editor Using PWA Criteria    
+Text Editor Using PWA Criteria  
+
+# Deployed App
+https://fathomless-peak-36309.herokuapp.com/
 
 # Table of Contents   
 - [User-Story](#user-story)
